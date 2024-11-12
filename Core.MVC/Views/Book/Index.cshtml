@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Core.Library.ArivuTharavuThalam.Book>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.bookName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bookId)
+            </th>
+            <th>@Html.DisplayName("Edit Book")</th>
+            <th>@Html.DisplayName("Author")</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bookName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bookId)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { bookId = item.bookId })
+                </td>
+                <td>
+                    @Html.ActionLink("Author", "Edit", "Person", new { personId = item.personId })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

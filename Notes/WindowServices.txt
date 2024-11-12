@@ -1,0 +1,44 @@
+
+Install-Package Microsoft.Extensions.Hosting.WindowsServices
+services.msc
+
+===========================================================================================================
+
+PUBLISH LOCATION
+C:\inetpub\winroot\visualstudio\coremvc
+
+Web App was published successfully file:///C:/inetpub/winroot/visualstudio/coremvc
+
+sc.exe create Core.MVC binPath= "C:/inetpub/winroot/visualstudio/coremvc/Core.MVC.exe"
+
+sc.exe start Core.MVC
+
+sc.exe delete Core.MVC
+
+-------------------------------------------------------------------------------------------------------------
+
+DEPLOYMENT WILL RUN WITH ENVIRONMENT "PRODUCTION - 7101" ,SO SET THE PORT ACCORDINGLY IN IIS TO MATCH APPSETTING
+
+ASPNETCORE_ENVIRONMENT = PRODUCTION
+
+http://localhost:7101/ping
+
+Change ASPNETCORE_ENVIRONMENT
+
+Control Panel > System & Security > Administrative tools> Event Viewer
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+https://www.infologs.in/tutorials/16/aspnet-core/101/host-aspnet-core-application-in-windows-service/
+
+----------------------------------
+--framework should have installed before bringing up the service
+
+dotnet publish -c Release
+
+--“self contained” deploy. means we deploy everything that the app requires to run right there in the publish folder 
+rather than having to install the .NET Core runtime on the target machine seperately.
+
+dotnet publish -c Release -r win-x64 --self-contained

@@ -1,0 +1,73 @@
+DOcker Compose is a tool for defining and running multi-container Docker applications
+Below is the Procedure to Bring Up the container of API Image along with Mongo DB / SQL DB Image
+
+
+Step 1:
+
+
+Open and RUN Docker for Windows
+
+
+
+Step 2: 
+Log into DockerHub using below command with DockerHub credential
+
+
+
+docker login
+
+NOTE:
+DOCKER LOGIN WILL PROVIDE MESSAGE "Login Succeeded" IF YOU ALREADY LOGED IN
+
+
+
+
+Step 3:
+CREATE  Docker Image AND RUN  Docker Containers
+
+
+
+cd C:\Rajesh\Projects\GitHubRepos\GitHubCoreMVC
+
+docker-compose -f dockercompos-dockerhub-internalnetwork.yml up
+
+
+
+
+Step 4:
+REMOVE Docker Containers
+
+
+
+cd C:\Rajesh\Projects\GitHubRepos\GitHubCoreMVC
+
+
+docker-compose -f dockercompos-dockerhub-internalnetwork.yml down --volumes
+
+docker volume ls
+
+docker volume prune
+
+
+
+
+
+=================================================================================
+Testing the running container
+
+
+Testing 1
+
+http://localhost:4104
+
+
+
+Testing 3
+
+docker container ls -a 
+
+docker exec -it mainapparivutharavuthalamcontainer /bin/bash 
+
+[mainapparivutharavuthalamcontainer - CONTAINER NAME]
+
+ls, exit

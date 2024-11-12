@@ -1,0 +1,56 @@
+
+Manual Procedure to create and push docker IMAGE into Azure Container Registry or Service created via Azure portal
+=======================================================================================================================
+
+Step 1:
+Create Azure Container Registery (ACR) service in Azure portal in the NAME [ONE TIME]
+
+
+ResourceGroup = rajeshresourcegroup
+NAME = rajeshcontainerregistry
+Container Registery = rajeshcontainerregistry.azurecr.io
+
+
+
+Step 2:
+Open and RUN Docker for Windows
+
+
+
+
+Step 3:
+Log In to rajeshcontainerregistry.azurecr.io
+
+
+
+docker login rajeshcontainerregistry.azurecr.io
+
+user name : rajeshcontainerregistry
+password 1: TAKE user name and password FROM "AccessKey" Section of Azure Container Registry in Azure portal
+password 2: TAKE user name and password FROM "AccessKey" Section of Azure Container Registry in Azure portal
+
+
+
+
+Step 4:
+CREATE and PUSH docker IMAGES to rajeshcontainerregistry.azurecr.io manually using - Dockerfile
+
+
+
+CD C:\Rajesh\Projects\GitHubRepos\GitHubCoreMVC\
+
+docker build -f Dockerfile.Prod -t rajeshcontainerregistry.azurecr.io/mainapparivutharavuthalamnetcoremvc .
+
+docker push rajeshcontainerregistry.azurecr.io/mainapparivutharavuthalamnetcoremvc
+
+
+
+
+
+============================================================================================================
+Testing:
+
+
+RUN IMAGE and CREATE CONTAINER [PORT-1 : PORT-2 or HOST_PORT : CONTAINER_PORT]
+
+docker run -p 4104:80 rajeshcontainerregistry.azurecr.io/mainapparivutharavuthalamnetcoremvc

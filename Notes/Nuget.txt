@@ -1,0 +1,23 @@
+INSTALL NUGET PACKAGES
+================================================
+
+Install-Package Core.Library.Base
+
+----------------------------------------------
+
+Install-Package Serilog
+Install-Package Serilog.AspNetCore
+Install-Package Serilog.Settings.Configuration
+
+----------------------------------------------
+
+https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core
+Microsoft.ApplicationInsights.AspNetCore
+
+----------------------------------------------
+
+Install-Package Microsoft.Extensions.Logging
+Install-Package Microsoft.Extensions.Logging.Console
+Install-Package Microsoft.Extensions.Hosting.WindowsServices
+
+----------------------------------------------

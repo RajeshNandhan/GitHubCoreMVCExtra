@@ -1,0 +1,29 @@
+git clone https://github.com/RajeshNandhan/CoreMVC.git
+
+git status
+
+git add .
+
+git status
+
+git commit -m "commit w"
+
+git status
+
+git push origin main
+
+git add .
+
+git pull origin master
+
+git remote -v
+
+
+------------------------------
+
+
+git config --global user.name RajeshNandhan
+
+git config --global user.email 
+git config --global user.name RajeshNandhan
+git config --list

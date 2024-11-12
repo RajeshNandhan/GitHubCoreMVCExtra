@@ -1,0 +1,11 @@
+Jenkins Workspace
+
+C:\Program Files (x86)\Jenkins\workspace
+
+SETTTING UP ENVIRONMENT
+https://andrewlock.net/how-to-set-the-hosting-environment-in-asp-net-core/
+
+CMD -> echo $Env:PATH
+POWERSHELL -> echo %PATH%
+
+echo $Env:ASPNETCORE_ENVIRONMENT 

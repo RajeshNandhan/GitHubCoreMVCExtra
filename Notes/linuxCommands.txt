@@ -1,0 +1,4 @@
+ls.
+pwd.
+cd directory-name.
+exit

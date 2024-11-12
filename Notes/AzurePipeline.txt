@@ -1,0 +1,13 @@
+
+https://mainapparivutharavuthalammvcservice.azurewebsites.net
+
+
+rajeshresourcegroup
+
+mainapparivutharavuthalammvcservice
+
+ASPNETCORE_ENVIRONMENT
+
+Azure
+
+rajeshresourcegroupapplicationinsights

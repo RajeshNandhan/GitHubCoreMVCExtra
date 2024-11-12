@@ -1,0 +1,43 @@
+1. Logging In
+
+Az login
+
+
+2. Logging Out
+
+az logout
+
+
+3. Check Account Details
+
+az account list
+
+
+
+2. Running Azure command with Interactive Mode
+
+az interactive
+
+out >> Installing the Interactive extension...
+
+
+
+=====================================================================================
+
+Azure Commands
+
+1. Azure Help Command
+
+az --help or az -h
+
+2. Azure Resource Groups Command
+
+az group list
+az group list --query "[].{resourcegroupname:name,location:location}"
+az group list --query "[?location=='centralus'].{resourcegroupname:name,location:location}"
+az group list -o jsonc
+az group list -o table
+az group list -o tsv
+az group list -o yaml
+
+

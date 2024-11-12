@@ -1,0 +1,50 @@
+https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/iis/?view=aspnetcore-3.1#create-the-iis-site
+
+ASP.NET Core 3.1 Runtime (v3.1.6) - Windows Hosting Bundle Installer
+https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-aspnetcore-3.1.6-windows-hosting-bundle-installer
+
+https://www.youtube.com/watch?v=ZG-6z4BQmRI
+
+
+PS C:\Windows\system32> net stop was /y
+The Windows Process Activation Service service is stopping.
+The Windows Process Activation Service service was stopped successfully.
+
+PS C:\Windows\system32> net start w3svc
+The World Wide Web Publishing Service service is starting.
+The World Wide Web Publishing Service service was started successfully.
+
+=======================================================================================================================
+PUBLISH LOCATION
+
+C:\inetpub\wwwroot\visualstudio\coremvc
+IISPublish - FolderProfile
+
+-------------------------------------------------------------------------------
+WEB SERVER
+
+Kestral as inproc webservice, IIS as hosting and outproc webservice
+
+<PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>OutOfProcess</AspNetCoreHostingModel> - ADD THIS CONFIG
+</PropertyGroup>
+
+REMOVE 'IsTransformWebConfigDisabled' generates webconfig file for IIS as hosting and outproc webservice
+
+<IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled> - REMOVE
+
+-------------------------------------------------------------------------------
+
+CHECK 'webconfig' created
+
+IIS WILL RUN WITH ENVIRONMENT "PRODUCTION" ,SO SET THE PORT ACCORDINGLY IN IIS TO MATCH APPSETTING- PRINCIPLE SERVICE TAKES [7101]
+
+http://localhost:7101/ping or http://localhost:7101/
+
+
+-------------------------------------------------------------------------------
+
+LOG
+
+C:\Users\rajes\AppData\Local\Temp

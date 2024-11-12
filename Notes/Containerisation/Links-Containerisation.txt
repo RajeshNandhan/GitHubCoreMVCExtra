@@ -1,0 +1,110 @@
+REFERENCE
+===========================================================================================
+
+Azure
+
+https://portal.azure.com
+
+
+Azure Container Registry (ACR)
+
+https://www.youtube.com/watch?v=O5aXcmKc1HU
+
+
+=========================================================================================
+
+REFERENCE
+
+CREATE MSSQL CONTAINERS 
+
+https://www.youtube.com/watch?v=SJAl3vOX05M
+
+
+Docker With Core API
+
+https://www.youtube.com/watch?v=f0lMGPB10bM
+https://docs.docker.com/compose/aspnet-mssql-compose/
+
+
+DOCKER COPOSE ARCHESTARTION
+
+https://www.youtube.com/watch?v=4V7CwC_4oss
+
+
+docker fix
+
+https://stackoverflow.com/questions/54611707/request-to-https-registry-npmjs-org-co-failed
+
+
+====================================================================================
+REFERENCE
+
+
+1. Setup Azure Kubernetes Cluster(AKS) in Azure Cloud
+
+https://www.youtube.com/watch?v=Zdcrv23WhWE
+
+
+
+2. Install Azure CLI
+
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+
+
+
+3. Azure CLI Command Introduction
+
+https://www.youtube.com/watch?v=GqpwiyYsNIw
+https://docs.microsoft.com/en-us/cli/azure/
+
+
+
+4.`INGRESS FOR AZURE KUBERNETES CLUSTER
+
+https://docs.microsoft.com/en-us/azure/aks/ingress-internal-ip#create-an-ingress-controller
+https://docs.microsoft.com/en-us/azure/api-management/api-management-kubernetes-helm
+https://kubernetes.github.io/ingress-nginx/deploy/
+https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/
+https://www.youtube.com/watch?v=QUfn0EDMmtY
+https://www.youtube.com/watch?v=sotCKJhQtuk
+https://docs.microsoft.com/en-us/azure/aks/kubernetes-helm
+
+
+
+
+Install Kubernetes and kubectl
+
+https://www.youtube.com/watch?v=8h4FoWK7tIA
+
+.Net Core in Kubernetes
+
+https://www.youtube.com/watch?v=ZOROT9yMp44
+
+kubectl config current-context
+
+kubectl get all
+
+Kubernetes TUTORIAL
+
+https://www.youtube.com/watch?v=X48VuDVv0do
+
+
+
+DOCKER Link
+ 
+https://www.youtube.com/watch?v=f0lMGPB10bM
+
+
+Install DOcker for Windows
+
+https://hub.docker.com/editions/community/docker-ce-desktop-windows/
+
+WSL 2 installation
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+install WSL2 Linux kernel update package for x64 machines
+
+Create an Account in 
+https://hub.docker.com/
